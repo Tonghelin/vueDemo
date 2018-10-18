@@ -1,0 +1,22 @@
+{
+  "name": "vuedemo",
+  "version": "1.0.0",
+  "description": "vue 学习demo   # 目录构成",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonghelin/vueDemo.git"
+  },
+  "author": "Linth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tonghelin/vueDemo/issues"
+  },
+  "homepage": "https://github.com/Tonghelin/vueDemo#readme"
+}
