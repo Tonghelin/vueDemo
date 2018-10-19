@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>v-for</title>
+    </head>
+    <body>
+
+        <div id="v_for">
+            <div>
+                <span>v-for 循环</span>
+                <ul>
+                    <li v-for="item in items">{{item}}</li>
+                </ul>
+
+                <span>v-for 循环带排序</span>
+                <ul>
+                    <li v-for="item in items_2">{{item}}</li>
+                </ul>
+
+                <span>v-for循环 json</span>
+                <ul>
+                    <li v-for="item in jsonData">{{item.name}} -- {{item.year}}</li>
+                </ul>
+
+                <span>v-for循环 index</span>
+                <ul>
+                    <li v-for="(item, index) in jsonData">{{index}} : {{item.name}} -- {{item.year}}</li>
+                </ul>
+
+                <span>v-for循环 index 排序</span>
+                <ul>
+                    <li v-for="item in sortJsonData">{{item.name}} -- {{item.year}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../../../assets/js/vue.js"></script>
+
+        <script src="../../../assets/js/page/Instruction/v_for/v_for.js"></script>
+
+    </body>
+</html>

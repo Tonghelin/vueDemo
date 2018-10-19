@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>vue指令之v-on</title>
+    </head>
+    <body>
+        <div id="v_model">
+            <p>v-model 实现双向数据绑定</p>
+            <hr>
+            {{msg}}
+            <br>
+            <input type="text" v-model="msg">
+
+            <hr>
+            <p>v-model 修饰符</p>
+            <p>
+                {{msg}}后面之一段文字是拼接的
+            </p>
+            <span>.lazy 懒加载 </span><input type="text" v-model.lazy="msg">
+            <br>
+            <br>
+            <span>.number 数字 </span><input type="text" v-model.number="msg">
+            <br>
+            <br>
+            <span>.trim 清除空格 </span><input type="text" v-model.trim="msg">
+
+            <hr>
+            <span>文本域</span><br>
+            <textarea name="" id="" cols="30" rows="5" v-model="textareaMsg"></textarea>
+
+            <hr>
+            <h3>多选框绑定一个值</h3>
+            <input type="checkbox" id="isTrue" v-model="isTrue">
+            <label for="isTrue">
+                <span v-if="isTrue">已选择</span>
+                <span v-if="!isTrue">已取消</span>
+            </label>
+            <hr>
+            <span>多选框绑定数组</span><br>
+            <input type="checkbox" id="value1" value="value1" v-model="valueArr">
+            <label for="value1">value1</label>
+
+            <input type="checkbox" id="value2" value="value2" v-model="valueArr">
+            <label for="value2">value2</label>
+
+            <input type="checkbox" id="value3" value="value3" v-model="valueArr">
+            <label for="value3">value3</label>
+            <br>
+            {{valueArr}}
+
+            <h3>单选框绑定</h3>
+            <input type="radio" id="man" value="男" v-model="sex" >
+            <label for="man"> 男</label>
+            <input type="radio" id="woman" value="女" v-model="sex">
+            <label for="woman"> 女</label>
+            <p>您是{{sex}}生</p>
+
+        </div>
+        <script type="text/javascript" src="../../../assets/js/vue.js"></script>
+
+        <script src="../../../assets/js/page/Instruction/v_model/v_model.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>vue指令之v-on</title>
+    </head>
+    <body>
+        <div id="v_on">
+            <p>简易计数器</p>
+            <p><span>Total：</span><span>{{total}}</span></p>
+            <button v-on:click="added">加➕</button>
+            <button @click="subtract">减➖</button>
+
+            <hr>
+            <input type="text" v-on:keyup.enter="onEnter" v-model="inputNum" >
+            <hr>
+            <input type="text" v-on:keyup="onEnter" v-model="inputNum" >
+            <hr>
+            <span>鼠标移开➕</span>
+            <input type="text" v-on:mouseout="onEnter" v-model="inputNum" >
+        </div>
+
+
+        <script type="text/javascript" src="../../../assets/js/vue.js"></script>
+
+        <script src="../../../assets/js/page/Instruction/v_on/v_on.js"></script>
+    </body>
+</html>
