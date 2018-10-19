@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HelloWorld</title>
+        <style>
+            .font_red{
+                color: #ff0000;
+            }
+            .font_blue{
+                color: #00f;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HelloWorld</h1>
+        <hr>
+        <div id="v_bind">
+            <img v-bind:src="imgSrc" alt="" width="200">
+            <ul>
+                <li>
+                    <span>缩写v-bind --> :</span>
+                    <br>
+                    <a v-bind:href="kestackSrc" target="_blank">KESTACK</a></li>
+            </ul>
+            <hr>
+            <div>
+                <ul>
+                    <li :class="className">绑定class属性</li>
+                    <li :class="{font_blue:isShow}">绑定class属性中的判断</li>
+                    <li>
+                        <input type="checkbox" id="input1" v-model="isShow">
+                        <label for="input1">isShow={{isShow}}</label>
+                    </li>
+                    <li :class="[className,class2]">
+                        绑定数组
+                    </li>
+                    <li :class="isShow?className:class2">
+                        v-bind中的三元运算
+                    </li>
+                    <li :style="{fontWeight: isBold, fontSize: bigSize}">
+                        绑定style
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../../../assets/js/vue.js"></script>
+
+        <script src="../../../assets/js/page/Instruction/v_bind/v_bind.js"></script>
+
+    </body>
+</html>
