@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>methods中方法的几种调用方法</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1>构造器内调用</h1>
+            <div v-cloak>
+                {{total}}
+                {{num}}
+            </div>
+
+            <button @click="change">Change</button>
+
+            <hr>
+            <h1>自定义组件中调用</h1>
+            <p>使用@click.native="change"</p>
+            <aaa @click.native="change"></aaa>
+
+        </div>
+
+        <hr>
+        <h1>构造器外部调用</h1>
+        <p>使用app.change()</p>
+        <button onclick="app.change()"> change</button>
+
+        <script type="text/javascript" src="../../../assets/js/vue.js"></script>
+
+        <script src="../../../assets/js/page/options/methods/methods.js"></script>
+    </body>
+</html>

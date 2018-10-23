@@ -4,17 +4,26 @@
 
 ### [【一】Vue2.0-内部指令(8)](https://www.chungold.com/course/6/tasks)  
 ```
-   1 : HelloWord实例  
-   2 : v-bind指令标签属性绑定  
-   3 : v-if和v-show  
-   4 : v-for指令学习  
-   5 : v-model指令 数据源绑定  
-   6 : v-on指令  
-   7 : v-text和v-html指令  
-   8 : 指令其它  
+   1 : HelloWord实例    
+   2 : v-if和v-show  
+   3 : v-for指令学习  
+   4 : v-text和v-html指令  
+   5 : v-on指令  
+   6 : v-model指令 数据源绑定  
+   7 : v-bind指令标签属性绑定   
+   8 : 指令其它 v-pre v-cloak v-once  
 ```
 
 ### [【二】Vue2.0-全局API(9)](https://www.chungold.com/my/course/7)
+[Vue.directive](https://cn.vuejs.org/v2/api/#Vue-directive)、
+[Vue.extend](https://cn.vuejs.org/v2/api/#Vue-extend)、
+[Vue.set]()、
+[生命周期]()、
+[Template]()、
+[component初识组件]()、
+[component组件props]()、
+[component父子组件]()、
+[component标签]()
 
 ```
    1 : Vue.directive自定义指令  
@@ -30,11 +39,11 @@
 ### [【三】Vue2.0-选项（6）](https://www.chungold.com/course/8/tasks)  
 
 ```
-   1 : propsData  
-   2 : computed  
+   1 : propsData    
+   2 : computed    
    3 : methods  
-   4 : watch   
-   5 : mixins  
+   4 : watch   用来监控数据  
+   5 : mixins  混入  
    6 : extends  
 ```
 ### [【四】Vue2.0-实例和内置组件（4）](https://www.chungold.com/course/9)  
