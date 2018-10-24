@@ -43,7 +43,7 @@
    2 : computed    
    3 : methods  
    4 : watch   用来监控数据  
-   5 : mixins  混入  
+   5 : mixins  混入  var 
    6 : extends  
 ```
 ### [【四】Vue2.0-实例和内置组件（4）](https://www.chungold.com/course/9)  
